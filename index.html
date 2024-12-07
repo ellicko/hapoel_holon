@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hapoel Holon Basketball Team</title>
+    <style>
+        :root {
+            --primary-color: #8b0000;
+            --secondary-color: #4a0404;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main-content {
+            background-color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .team-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .team-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hapoel Holon Basketball</h1>
+            <p>Pride of the Purple City</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main class="main-content">
+            <section id="about" class="section">
+                <h2>About the Team</h2>
+                <div class="team-info">
+                    <div>
+                        <p>Hapoel Holon is a professional basketball club based in Holon, Israel. The team competes in the Israeli Premier League and has established itself as one of the most competitive teams in Israeli basketball.</p>
+                        <p>Home Arena: Holon Toto Hall<br>
+                        Capacity: 5,500<br>
+                        Team Colors: Purple and White<br>
+                        Founded: 1947</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="history" class="section">
+                <h2>History</h2>
+                <p>The team has a rich history in Israeli basketball, representing the city of Holon with pride and distinction since its establishment in 1947.</p>
+            </section>
+
+            <section id="achievements" class="section">
+                <h2>Notable Achievements</h2>
+                <ul>
+                    <li>Israeli Championship titles</li>
+                    <li>State Cup victories</li>
+                    <li>Regular participation in European competitions</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hapoel Holon Basketball. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
